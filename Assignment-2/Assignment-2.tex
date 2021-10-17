@@ -43,23 +43,42 @@
     在弱传导近似下，利用公式（5.97）计算 EH$_{11}$ 模和 HE$_{31}$ 模的截止条件，并利用标量模理论解释其物理原因.
 \end{prob}
 \begin{sol}
+    EH$_{mn}$ ($m\geq 1$) 模的截止条件是
+    \begin{align}
+        J_m(U)=0,\quad U\neq 0.
+    \end{align}
+    其中对 EH$_{11}$ 模, 截止条件是
+    \begin{align}
+        U_{11}=3.83\quad(\text{即 $J_1(U)$ 的第一个非零零点}),
+    \end{align}
+    故当 $U_{11}\leq 3.83$ 时, EH$_{11}$ 模就被截止而无法存在.
+
+    HE$_{mn}$ 模的截止条件是式 (5.97)
+    \begin{align}
+        \left[\left(\frac{n_1}{n_2}\right)^2+1\right]J_m(U)=\frac{U}{m-1}J_m(U),
+    \end{align}
     利用公式
     \begin{align}
         \frac{(m-1)J_{m-1}(U)}{U}=\frac{1}{2}(J_{m-2}(U)+J_n(U))
     \end{align}
-    可将式 (5.97)
-    \begin{align}
-        \left[\left(\frac{n_1}{n_2}\right)^2+1\right]J_{m-1}(U)=\frac{U}{m-1}J_m(U)
-    \end{align}
-    化简为
+    可将式 (5.97) 化简为
     \begin{align}
         \frac{J_{m-2}(U)}{J_m(U)}=\frac{n_2^2-n_1^2}{n_2^2+n_1^2}.
     \end{align}
     在弱导条件下, $n_1\approx n_2$, 有
     \begin{align}
-        J_2(U)=0.
+        J_{m-2}(U)=0.
     \end{align}
-    对 $H$
+    其中对 HE$_{31}$ 模, 截止条件是
+    \begin{align}
+        U_{31}=3.83\quad(\text{即 $J_1(U)$ 的第一个非零零点}),
+    \end{align}
+    故当 $U_{31}\leq 3.83$ 时, HE$_{31}$ 模就被截止而无法存在.
+
+    上面得到EH$_{11}$ 模和 HE$_{31}$ 模的截止条件是相同的, 这是因为在弱导近似的条件下, EH$_{11}$ 模和 HE$_{31}$ 模是简并的, 它们线性叠加成为标量模:
+    \begin{align}
+        \Psi_{20}(LP_{21})=HE_{31}+EH_{11}.
+    \end{align}
 \end{sol}
 
 \begin{prob}
