@@ -20,13 +20,35 @@
     用截去法测量光纤在 $0.85\,\mu$m 波长的损耗. 若用光电接收器测得 $2$ 公里长的光纤输出电压为 $2.1$ V，当光纤被截去剩下 $3$ 米时输出电压增加到 $10.5$ V，求每公里该光纤在 $0.85\,\mu$m 波长上的衰减，并用公式不确定度 $=\pm 0.2/(L_1-L_2)$ dB/km 来估计测量精度.
 \end{prob}
 \begin{sol}
-    
+    该光纤在 $0.85\,\mu$m 波长上的衰减为
+    \begin{align}
+        \alpha=\frac{10}{L_1-L_2}\log_{10}\frac{I_2}{I_1}=-3.5\text{ dB/km}.
+    \end{align}
+    测量精度为
+    \begin{align}
+        \Delta\alpha=\pm\frac{0.2}{L_1-L_2}\text{ dB/km}=\pm0.1\text{ dB/km}.
+    \end{align}
 \end{sol}
 
 \begin{prob}
     分析影响单模光纤色散的各种因素，如何减小单模光纤中的色散？
 \end{prob}
 \begin{ans}
-    
+    影响单模光纤色散的各种因素:
+    \begin{itemize}
+        \item[(1)] \textbf{材料色散}: 材料本身的折射率依赖频率, 导致不同频率的光波在材料中传输的群速度不同, 从而引起的色散, 这种色散在单模光纤中占主要地位, 其造成的群时延差为
+        \begin{align}
+            \Delta\tau_n=-\frac{L}{c}\lambda\left(\frac{\mathrm{d}^2n_1}{\mathrm{d}\lambda^2}\right)\Delta\lambda.
+        \end{align}
+        \item[(2)] \textbf{波导色散 (又称模内色散)}: 对于光纤的一个模式本身, 在不同频率下的传播常数 $\beta$ 不同, 群速度不同, 从而引起的色散.
+        \item[(3)] \textbf{偏振模色散}: 光纤轴的不对称时, 会导致单模光纤的 HE$_{11}$ 模退简并为 HE$_{11x}$ 模和 HE$_{11y}$ 模, 两者传输的群速度不同, 从而引起的色散.
+    \end{itemize}
+
+    减小单模光纤中色散的方法:
+    \begin{itemize}
+        \item[(1)] 选用材料色散特性 $\frac{\mathrm{d}^2n_1}{\mathrm{d}\lambda^2}$ 小的材料制备光纤可以减小材料色散.
+        \item[(2)] 选用单色性较好, 即波长展宽 $\Delta\lambda$ 较小的激光作为光源, 可以减小材料色散和波导色散.
+        \item[(3)] 选用轴对称性较好的光纤可以减小偏振模色散.
+    \end{itemize}
 \end{ans}
 \end{document}
