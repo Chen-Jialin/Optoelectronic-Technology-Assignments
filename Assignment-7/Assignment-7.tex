@@ -10,27 +10,45 @@
     \end{itemize}
 \end{prob}
 \begin{ans}
-    
+    \begin{itemize}
+        \item[(1)] 能, 这些光相干, 例如放大器就没有镜面或其他光反馈的部件, 其中的介质被泵浦光激励时, 可在信号光的作用下受激发射, 从而放大信号光.
+        \item[(2)] 阈值现象: 增益增大到一定程度时, 激光器的工作模式从非受激辐射转变为受激辐射.
+        \item[(3)] 阈值电流密度
+        \begin{align}
+            J_{\text{th}}=\frac{8\pi n^2\Delta\nu D}{\eta_{\text{in}}\lambda^2}\left(\alpha+\frac{1}{2L}\ln\frac{1}{2R}\right),
+        \end{align}
+        其中 $n$ - 介质折射率, $\Delta\nu$ - 纵模频率间隔, $D$ - 光发射层厚度, $\eta_{\text{in}}$ - 内量子效率, $\lambda$ - 激光波长, $\alpha$ - 谐振腔内损耗系数, $L$ - 谐振腔长, $R$ - 谐振腔端面功率反射系数. 场限制激光器可将发光层厚度 $D$ 限制在一个较小的范围内, 从而可得较低的阈值电流 $J_{\text{th}}$, 以及较高的效率.
+    \end{itemize}
 \end{ans}
 
 \begin{prob}
     工作波长 $\lambda_0=8950$ \AA 的 \ce{GaAs} DFB 激光器，若用一级光栅，试求光栅间距为多少？
 \end{prob}
 \begin{sol}
-    
+    光栅间距
+    \begin{align}
+        \Lambda=\frac{\lambda}{2n}=\frac{895.0\text{ nm}}{2\times 3.6}=124.3\text{ nm}.
+    \end{align}
 \end{sol}
 
 \begin{prob}
     如果 \ce{GaAs} 介质的折射率 $n=3.6$，试求 \ce{GaAs} 半导体激光器谐振腔端面的反射率 $R$.
 \end{prob}
 \begin{sol}
-    
+    由菲涅尔公式, 谐振腔端面的反射率
+    \begin{align}
+        R=\left(\frac{n-1}{n+1}\right)^2=\left(\frac{3.6-1}{3.6+1}\right)^2=0.32.
+    \end{align}
 \end{sol}
 
 \begin{prob}
     半导体激光器的发散角可近似为 $\theta\approx\lambda_0/a$，$a$ 为有源区线度，若 $d=2\,\mu$m，$w=12\,\mu$m，求该激光器的发散角 $\theta_{\perp}$ 和 $\theta_{\parallel}$ 的值.
 \end{prob}
 \begin{sol}
-    
+    该激光的发散角
+    \begin{align}
+        \theta_{\perp}=&\frac{\lambda_0}{d},\\
+        \theta_{\parallel}=&\frac{\lambda_0}{w}.
+    \end{align}
 \end{sol}
 \end{document}
